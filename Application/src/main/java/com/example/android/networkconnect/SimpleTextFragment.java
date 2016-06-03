@@ -28,6 +28,9 @@ import android.widget.TextView;
 /**
  * Simple fragment containing only a TextView. Used by TextPagerAdapter to create
  * tutorial-style pages for apps.
+ * 为啥要费劲搞个Fragment包装TextView呢，原因是谷歌这些Demo都是这样的，直接复制工程改动就
+ * 拿来用了，并且这些Fragment支持横竖屏的布局变化。所以。。。
+ * 另外，还有那些logger包里面的文件，都是这样的复用了。
  */
 public class SimpleTextFragment extends Fragment {
 
