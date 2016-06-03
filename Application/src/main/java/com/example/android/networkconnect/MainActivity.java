@@ -65,6 +65,8 @@ public class MainActivity extends FragmentActivity {
 
         // Initialize the logging framework.
         initializeLogging();
+        // 得在初始化之后才能打印出来，否则截取不到，无法打印出来
+        Log.i(TAG, "onCreate()");
     }
 
     @Override
